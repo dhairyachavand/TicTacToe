@@ -30,9 +30,9 @@ const checkWin = () => {
 
     wins.forEach(e =>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "") ){
-
-            document.querySelector('.info').innerText = boxtext[e[0]].innerText + "Won"
-            isgameover = true;
+            document.querySelector('.info').innerText = boxtext[e[0]].innerText + " Won"
+            isgameover = true
+            document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "200px";
         }
     })
 }
